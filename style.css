@@ -1,0 +1,140 @@
+/* General Styling*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/*Navbar Hover Effect*/
+.navbar-nav .nav-link {
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff5733 !important;
+    font-weight: bold;
+}
+
+/*Hero Section for Index Page*/
+.hero {
+    position: relative;
+    height: 50vh; /* Your preferred height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url('images/home-bg.jpg') no-repeat center center/cover;
+}
+
+/*Hero Section for About Page (With Light Overlay)*/
+.hero-about {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url('images/about-bg.jpg') no-repeat center center/cover;
+}
+
+.hero-about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); 
+}
+
+/*Learn More Button*/
+.btn-lg {
+    padding: 10px 20px; /* Reducing width */
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff5733;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-lg:hover {
+    background-color: #d4411e;
+}
+
+/*Highlight Section (Index Page)*/
+.bg-light {
+    background-color: #fff8f3 !important;
+}
+
+/*FORM STYLING */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+/*Form Inputs*/
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #ff5733;
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.3);
+}
+
+/* Form Labels*/
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+/*Form Buttons*/
+.btn-primary {
+    background-color: #ff5733;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #d4411e;
+}
+
+/*  Form Headers */
+h2 {
+    text-align: center;
+    color: #ff5733;
+    margin-bottom: 20px;
+}
+
+/*Textarea */
+textarea.form-control {
+    height: 120px;
+    resize: none;
+}
+
+/* Links Inside Forms (For login/register pages) */
+.form-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-links a {
+    color: #ff5733;
+    text-decoration: none;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
